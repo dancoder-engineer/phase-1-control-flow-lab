@@ -1,0 +1,93 @@
+
+added 209 packages, and audited 210 packages in 4s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+4 low severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> js-basics-flow-control@0.1.0 test
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  index.js
+    scuberGreetingForFeet()
+      1) gives customers a free sample if the ride is less than or equal to 400 feet
+      2) charges 30 dollars for a distance over 2000 feet
+      3) does not allow rides over 2500 feet
+    ternaryCheckCity()
+      4) returns "Ok, sounds good." when the city is NYC
+      5) should return "No go." if the destination city is not NYC
+    switchOnCharmFromTip()
+      6) should return "Thank you so much." if the tip is generous
+      7) should return "Thank you." if the tip is not as generous
+      8) should return "Bye." if anything else
+
+
+  0 passing (195ms)
+  8 failing
+
+  1) index.js
+       scuberGreetingForFeet()
+         gives customers a free sample if the ride is less than or equal to 400 feet:
+     AssertionError: expected undefined to equal 'This one is on me!'
+      at Context.<anonymous> (test/indexTest.js:4:45)
+      at processImmediate (node:internal/timers:464:21)
+
+  2) index.js
+       scuberGreetingForFeet()
+         charges 30 dollars for a distance over 2000 feet:
+     AssertionError: expected undefined to equal 'I will gladly take your thirty bucks.'
+      at Context.<anonymous> (test/indexTest.js:8:46)
+      at processImmediate (node:internal/timers:464:21)
+
+  3) index.js
+       scuberGreetingForFeet()
+         does not allow rides over 2500 feet:
+     AssertionError: expected undefined to equal 'No can do.'
+      at Context.<anonymous> (test/indexTest.js:12:46)
+      at processImmediate (node:internal/timers:464:21)
+
+  4) index.js
+       ternaryCheckCity()
+         returns "Ok, sounds good." when the city is NYC:
+     AssertionError: expected undefined to equal 'Ok, sounds good.'
+      at Context.<anonymous> (test/indexTest.js:18:42)
+      at processImmediate (node:internal/timers:464:21)
+
+  5) index.js
+       ternaryCheckCity()
+         should return "No go." if the destination city is not NYC:
+     AssertionError: expected undefined to equal 'No go.'
+      at Context.<anonymous> (test/indexTest.js:22:49)
+      at processImmediate (node:internal/timers:464:21)
+
+  6) index.js
+       switchOnCharmFromTip()
+         should return "Thank you so much." if the tip is generous:
+     AssertionError: expected undefined to equal 'Thank you so much.'
+      at Context.<anonymous> (test/indexTest.js:28:51)
+      at processImmediate (node:internal/timers:464:21)
+
+  7) index.js
+       switchOnCharmFromTip()
+         should return "Thank you." if the tip is not as generous:
+     AssertionError: expected undefined to equal 'Thank you.'
+      at Context.<anonymous> (test/indexTest.js:32:58)
+      at processImmediate (node:internal/timers:464:21)
+
+  8) index.js
+       switchOnCharmFromTip()
+         should return "Bye." if anything else:
+     AssertionError: expected undefined to equal 'Bye.'
+      at Context.<anonymous> (test/indexTest.js:36:64)
+      at processImmediate (node:internal/timers:464:21)
+
+
+
